@@ -13,8 +13,8 @@ class FPSInferNode : public rclcpp::Node {
 public:
     FPSInferNode() : Node("fps_infer_node") {
         // 从参数服务器获取路径
-        this->declare_parameter<string>("model_file", "/home/dji/projects/zwc/fps_infer_node/models/last.onnx");
-        this->declare_parameter<string>("image_file", "/home/dji/projects/zwc/fps_infer_node/models/new.jpg");
+        this->declare_parameter<string>("model_file", "/home/dji/projects/zwc-test/fps_-infer/fps_infer_node/models/last.onnx");
+        this->declare_parameter<string>("image_file", "/home/dji/projects/zwc-test/fps_-infer/fps_infer_node/models/new.jpg");
         this->declare_parameter<string>("output_file", "fps_output.txt");
 
         this->get_parameter("model_file", model_file_);
